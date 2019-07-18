@@ -1,2 +1,2 @@
-# github-empty-project
-The github empty tempate
+# node-webpack-sample
+The node webpack sample project.
