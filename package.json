@@ -18,6 +18,13 @@
   },
   "homepage": "https://github.com/chumpon-asaneerat/node-webpack-sample#readme",
   "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@riotjs/compiler": "^4.3.5",
+    "@riotjs/hot-reload": "^4.0.0",
+    "@riotjs/webpack-loader": "^4.0.1",
+    "babel-loader": "^8.0.6",
+    "riot": "^4.3.5",
     "webpack": "^4.38.0",
     "webpack-cli": "^3.3.6"
   },
