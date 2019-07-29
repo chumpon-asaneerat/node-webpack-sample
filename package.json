@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/chumpon-asaneerat/node-webpack-sample/issues"
   },
-  "homepage": "https://github.com/chumpon-asaneerat/node-webpack-sample#readme"
+  "homepage": "https://github.com/chumpon-asaneerat/node-webpack-sample#readme",
+  "devDependencies": {
+    "webpack": "^4.38.0",
+    "webpack-cli": "^3.3.6"
+  }
 }
