@@ -24,7 +24,9 @@
     "@riotjs/hot-reload": "^4.0.0",
     "@riotjs/webpack-loader": "^4.0.1",
     "babel-loader": "^8.0.6",
+    "css-loader": "^3.1.0",
     "riot": "^4.3.5",
+    "style-loader": "^0.23.1",
     "webpack": "^4.38.0",
     "webpack-cli": "^3.3.6"
   },

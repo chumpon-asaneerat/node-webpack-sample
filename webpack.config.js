@@ -12,12 +12,18 @@ module.exports = {
 */
 module.exports = {
     mode: 'development',
-    entry: './app/main.js',
+    entry: { 
+        main: './app/js/main.js',
+        index: './src/index.js'
+    },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'main.js'
+        filename: '[name].js'
     },
     devtool: 'inline',
+    optimization: {
+        minimize: true
+    },
     module: {
         rules: [{
             test: /\.riot$/,
@@ -33,6 +39,20 @@ module.exports = {
                 loader: 'babel-loader',
                 options: { presets: ['@babel/preset-env'] }
             }
+        }, {
+            test: /\.css$/,
+            exclude: /node_modules/,
+            use: [
+                // style-loader
+                { 
+                    loader: 'style-loader'
+                },
+                // css-loader
+                {
+                    loader: 'css-loader',
+                    options: { modules: false }
+                }
+            ]
         }]
     }
 }
