@@ -11,11 +11,11 @@ module.exports = {
 };
 */
 module.exports = {
+    mode: 'development',
     entry: './app/main.js',
     output: {
-        path: path.resolve(__dirname, 'public'),
-        publicPath: '/public/',
-        filename: 'bundle.js'
+        path: path.resolve(__dirname, 'dist'),
+        filename: 'main.js'
     },
     devtool: 'inline',
     module: {
