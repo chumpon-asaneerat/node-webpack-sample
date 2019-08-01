@@ -18,21 +18,21 @@ module.exports = {
     },
     module: {
         rules: [{
-            test: /\.(riot|tag)$/,
+            test: /\.(riot|tag)$/i,
             exclude: /node_modules/,
             use: [{
                 loader: '@riotjs/webpack-loader',
                 options: { hot: true }
             }]
         }, {
-            test: /\.js$/,
+            test: /\.js$/i,
             exclude: /node_modules/,
             use: {
                 loader: 'babel-loader',
                 options: { presets: ['@babel/preset-env'] }
             }
         }, {
-            test: /\.scss$/,
+            test: /\.scss$/i,
             exclude: /node_modules/,
             use: [
                 {
@@ -48,7 +48,7 @@ module.exports = {
                 }
             ]
         }, {
-            test: /\.css$/,
+            test: /\.css$/i,
             exclude: /node_modules/,
             use: [
                 // style-loader
@@ -63,6 +63,7 @@ module.exports = {
             ]
         }, {
             test: /\.(png|jpe?g|gif)$/i,
+            exclude: /node_modules/,
             use: [
               {
                 loader: 'url-loader',
