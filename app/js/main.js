@@ -3,6 +3,6 @@ import {component} from 'riot'
 
 import '../css/style.css'
 
-import Random from '../riot/random.riot'
+import app from '../riot/app.tag'
 
-component(Random)(document.getElementById('app'), { title: 'Hi there!' })
+component(app)(document.getElementById('app'), { title: 'Hi there!' })
